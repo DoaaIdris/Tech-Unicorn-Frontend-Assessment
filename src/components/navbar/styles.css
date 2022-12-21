@@ -1,0 +1,115 @@
+.navbar ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    margin-top: 93px;
+}
+
+.navbar {
+    
+    height: 93px;
+
+}
+
+.navbar li{
+    margin: 1rem;
+    font-size: 16px;
+    font: DM Sans;
+    line-height: 370%;
+    height: 30px;
+    
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar a.nav-selected {
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 600px){
+    .navbar ul {
+        flex-direction: row;
+    }
+}
+
+.header{
+    position: absolute;
+    width: 100%;
+    height: 93px;
+    left: 0px;
+    top: 0px;
+    background-color: white;
+}
+
+.logo{
+    position: absolute;
+    width: 152px;
+    height: 47px;
+    left: 94px;
+    top: 2px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #F86338;
+
+}
+
+.callcenter{
+    position: absolute;
+    width: 86px;
+    height: 19px;
+    left: 1040px;
+    top: 39px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #11142D;
+}
+
+.shipping{
+    position: absolute;
+    width: 146px;
+    height: 19px;
+    left: 1190px;
+    top: 39px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #11142D;
+}
+
+.searchBar{
+    position: absolute;
+    width: 573px;
+    height: 50px;
+    left: 451px;
+    top: 115px;
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+
+.searchtext{
+    position: absolute;
+    width: 166px;
+    height: 20px;
+    left: 40px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.005em;
+    color: #9A9AB0;
+}
