@@ -1,0 +1,47 @@
+button:disabled {
+    opacity: 0.2;
+}
+
+button:disabled:hover {
+    opacity: 0.2;
+    cursor: default;
+}
+
+.primary {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    padding: 18px 24px;
+    gap: 10px;
+
+    position: relative;
+    width: 156px;
+    height: 56px;
+
+    background: #F86338;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    top: 41%;
+    left: 55%;
+}
+
+.secondary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 24px;
+    gap: 10px;
+
+    position: absolute;
+    width: 156px;
+    height: 56px;
+
+    background: #f8623800;
+    border:#F86338;
+    border-radius: 8px;
+}

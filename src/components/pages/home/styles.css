@@ -6,3 +6,18 @@
     top: 205px;
     background: #ffffff;
 }
+
+.products-container {
+    width: 100%;
+    height: 1647px;
+    top: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 0px;
+    margin-left: 6rem;
+}
+
+
+
