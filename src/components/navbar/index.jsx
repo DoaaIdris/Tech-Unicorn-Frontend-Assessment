@@ -3,6 +3,7 @@ import{
 }from 'react-router-dom';
 
 import "./styles.css";
+import {BsCart3} from 'react-icons/bs';
 
 export const Navbar = () => {
     return (
@@ -22,9 +23,7 @@ export const Navbar = () => {
             <nav className="navbar">
                 <ul className="navbar-list">
                     <li>
-                        <NavLink  to="/shop">
-                            Shop
-                        </NavLink>
+                        Shop
                     </li>
                     <li>
                         Promo
@@ -34,6 +33,12 @@ export const Navbar = () => {
                     </li>
                     <li>
                         Blog
+                    </li>
+
+                    <li>
+                        <NavLink  to="/cart">
+                            <BsCart3 className='cartIcon'></BsCart3>
+                        </NavLink>
                     </li>
                 </ul>
             </nav>

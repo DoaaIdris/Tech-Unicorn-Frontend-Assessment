@@ -8,21 +8,28 @@ import {
 }from "react-router-dom";
 
 import { Navbar } from "./components/navbar/index";
-import {HomePage} from './components/pages/home/index'
+import {HomePage} from './components/pages/home/index';
+import {CartPage} from './components/pages/cart/index';
+import {Search}  from './components/Search/index';
+import {Footer} from './components/Footer/index'
 
 function App() {
   return (
-    <div classname="App">
+    <div className="App">
       <Router>
         <Navbar></Navbar>
         <Switch>
           <Route exact path="/">
             <HomePage></HomePage>
           </Route>
-          <Route path="/shop">
-            <div>Shop</div>
+          <Route path="/cart">
+            <Search></Search>
+          </Route>
+          <Route path="/product/:id">
+            <div>Product</div>
           </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
     </div>
   );

@@ -113,3 +113,13 @@
     letter-spacing: 0.005em;
     color: #9A9AB0;
 }
+
+.cartIcon{
+    position: absolute;
+    width: 248px;
+    height: 30px;
+    left: 1088px;
+    top: 125px;
+    font-size: 30px;
+    color: black;
+}

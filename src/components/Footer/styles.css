@@ -1,0 +1,11 @@
+.footer-container{
+    position: absolute;
+    width: 100%;
+    height: 476px;
+    left: 0px;
+    top: 4800px;
+
+    /* Light/System Background/Primary */
+
+    background: #FFFFFF;
+}

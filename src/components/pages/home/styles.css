@@ -8,15 +8,16 @@
 }
 
 .products-container {
-    width: 100%;
-    height: 1647px;
-    top: 900px;
+    width: 89%;
+    top: 1000px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     position: absolute;
     left: 0px;
     margin-left: 6rem;
+    padding-bottom: 70px;
+    
 }
 
 
