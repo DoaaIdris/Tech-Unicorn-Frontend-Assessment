@@ -4,8 +4,57 @@
     height: 476px;
     left: 0px;
     top: 4800px;
-
-    /* Light/System Background/Primary */
-
     background: #FFFFFF;
+}
+
+.rectangle{
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    left: 104px;
+    top: 60px;
+    background: #E2E2EA;
+}
+
+.footer-title{
+    position: absolute;
+    width: 249px;
+    height: 77px;
+    left: 520px;
+    top: 30px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120%;
+    letter-spacing: 0.003em;
+    color: #F86338;
+}
+
+.txt1, .txt2, .txt3{
+    position: absolute;
+    width: 392px;
+    height: 19px;
+    left: 490px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #11142D;
+}
+
+.txt1{
+    top: 180px;
+    left: 385px;
+}
+
+.txt2{
+    top: 230px;
+    left: 417px;
+}
+
+.txt3{
+    top: 390px;
 }

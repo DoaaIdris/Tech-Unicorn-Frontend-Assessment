@@ -54,4 +54,99 @@
     left: 850px;
 }
 
+.bannerTitle{
+    position: absolute;
+    width: 593px;
+    height: 154px;
+    left: 728px;
+    top: 140px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120%;
+    letter-spacing: 0.003em;
+    color: #11142D;
+    text-align: left;
+}
+
+.bannerTxt{
+    position: absolute;
+    width: 612px;
+    height: 40px;
+    left: 728px;
+    top: 370px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.005em;
+    color: #515151;
+    text-align: left;
+}
+
+.circle{
+    position: absolute;
+    border-radius: 100%;
+}
+
+#circle1{
+    width: 20px;
+    height: 20px;
+    left: 150px;
+    top: 500px;
+    background: #F86338;
+}
+
+#circle2{
+    width: 10px;
+    height: 10px;
+    left: 885px;
+    top: 600px;
+    background: #F86338;
+}
+
+#circle3{
+    width: 18px;
+    height: 18px;
+    left: 1214px;
+    top: 500px;
+    background: #F86338;
+}
+
+#circle4{
+    width: 39px;
+    height: 39px;
+    left: 620px;
+    top: 239px;
+    background: #F86338;
+}
+
+#circle5{
+    width: 59.48px;
+    height: 59.48px;
+    left: 500px;
+    top: 505px;
+    background: #36B2F8;
+}
+
+#circle6{
+    width: 56.34px;
+    height: 56.34px;
+    left: 1245.88px;
+    top: 60px;
+    background: #36B2F8;
+}
+
+#circle7{
+    width: 100px;
+    height: 100px;
+    left: 68px;
+    top: 180px;
+    background: #36B2F8;
+}
+
+
+
 

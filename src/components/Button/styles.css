@@ -18,15 +18,20 @@ button:disabled:hover {
     position: relative;
     width: 156px;
     height: 56px;
-
     background: #F86338;
     border-radius: 8px;
-    border: none;
+    border: 0px;
     font-size: 20px;
     color: white;
     cursor: pointer;
     top: 41%;
     left: 55%;
+}
+
+.primary:hover{
+    background: white;
+    border:#F86338;
+    color: #F86338;
 }
 
 .secondary {

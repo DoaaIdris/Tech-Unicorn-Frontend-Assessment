@@ -123,3 +123,7 @@
     font-size: 30px;
     color: black;
 }
+
+.cartIcon:hover{
+    color:#F86338;
+}
