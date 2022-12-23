@@ -1,7 +1,6 @@
 import "./styles.css";
 import {useEffect, useState, useContext} from 'react';
 import { ProductItem } from "../../ProductItem";
-import { ProductsOrderContextProvider} from "../../../context/productsContext";
 import { Search } from '../../Search';
 
 export const HomePage = () => {
@@ -9,9 +8,6 @@ export const HomePage = () => {
     const [products, setProducts] = useState([]);
     const [searchedProducts, setSearchedProducts] = useState([]);
     const [searchString, setSearchString] = useState('');
-    //let [selectedString, setSelectedCategory] = useState('');
-
-    const globalState = useContext(ProductsOrderContextProvider);
 
     useEffect(
         () => {
@@ -25,11 +21,6 @@ export const HomePage = () => {
         }, [searchString]
     );
 
-    // useEffect(
-    //     () => {
-    //         handleCategoryUpdate();
-    //     }, []
-    // );
 
     const handleSearchByProduct = () => {
         if(searchString === '') {
@@ -58,7 +49,7 @@ export const HomePage = () => {
 
         console.log('hello');
 
-        if(selectedString === '') {
+        if(selectedString === 'all') {
             
             setSearchedProducts(products);
             return;
@@ -78,9 +69,6 @@ export const HomePage = () => {
         setSearchedProducts(productsSearched);
     }
 
-    // const handleCategoryUpdate = (cat) => {
-    //     setSelectedCategory(.target.value)
-    // }
 
     const getProducts = async() => {
         try{
@@ -92,7 +80,6 @@ export const HomePage = () => {
 
             setSearchedProducts(data);
 
-            globalState.initializeProducts(data);
 
         }catch(err){
             console.log (err)
@@ -121,6 +108,7 @@ export const HomePage = () => {
 
             <Search handleSearchUpdate={handleSearchUpdate}></Search>
 
+            <p className="category" id="all" onClick={() => handleCategoryUpdate('all')}>All</p>
             <p className="category" id="jewelery" onClick={() => handleCategoryUpdate('jewelery')}>Jewelery</p>
             <p className="category" id="clothing" onClick={() => handleCategoryUpdate('clothing')}>Clothing</p>
             <p className="category" id="electronics" onClick={() => handleCategoryUpdate('electronics')}>Electronics</p>

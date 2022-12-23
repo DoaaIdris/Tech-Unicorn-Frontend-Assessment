@@ -10,7 +10,6 @@ import {
 import { Navbar } from "./components/navbar/index";
 import {HomePage} from './components/pages/home/index';
 import {CartPage} from './components/pages/cart/index';
-import {Search}  from './components/Search/index';
 import {Footer} from './components/Footer/index'
 
 function App() {
@@ -23,10 +22,7 @@ function App() {
             <HomePage></HomePage>
           </Route>
           <Route path="/cart">
-            <Search></Search>
-          </Route>
-          <Route path="/product/:id">
-            <div>Product</div>
+            <CartPage></CartPage>
           </Route>
         </Switch>
         <Footer></Footer>
