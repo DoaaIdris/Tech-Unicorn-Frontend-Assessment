@@ -1,5 +1,5 @@
 import "./styles.css";
-import {useEffect, useState, useContext} from 'react';
+import {useEffect, useState} from 'react';
 import { ProductItem } from "../../ProductItem";
 import { Search } from '../../Search';
 
