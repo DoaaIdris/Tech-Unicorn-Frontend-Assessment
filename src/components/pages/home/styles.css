@@ -9,7 +9,7 @@
 
 .products-container {
     width: 89%;
-    top: 1000px;
+    top: 1050px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -20,5 +20,38 @@
     
 }
 
+.category{
+    color: black;
+    position: relative;
+    position: absolute;
+    width: 179px;
+    height: 29px;
+    left: 100px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    top: 980px;
+    color: #9A9AB0;
+    cursor: pointer;
+}
+
+.category:hover{
+    color:#F86338;
+}
+
+#jewelery{
+    left: 450px;
+}
+
+#clothing{
+    left: 650px;
+}
+
+#electronics{
+    left: 850px;
+}
 
 

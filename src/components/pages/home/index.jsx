@@ -9,6 +9,7 @@ export const HomePage = () => {
     const [products, setProducts] = useState([]);
     const [searchedProducts, setSearchedProducts] = useState([]);
     const [searchString, setSearchString] = useState('');
+    //let [selectedString, setSelectedCategory] = useState('');
 
     const globalState = useContext(ProductsOrderContextProvider);
 
@@ -24,8 +25,15 @@ export const HomePage = () => {
         }, [searchString]
     );
 
+    // useEffect(
+    //     () => {
+    //         handleCategoryUpdate();
+    //     }, []
+    // );
+
     const handleSearchByProduct = () => {
         if(searchString === '') {
+            
             setSearchedProducts(products);
             return;
         }
@@ -38,10 +46,41 @@ export const HomePage = () => {
                 return isMatch !== -1;
             }
         )
-
+        
         console.log(productsSearched);
         setSearchedProducts(productsSearched);
     }
+
+    const handleCategoryUpdate = (cat) => {
+
+        var selectedString = document.getElementById(cat).id;
+        console.log(selectedString);
+
+        console.log('hello');
+
+        if(selectedString === '') {
+            
+            setSearchedProducts(products);
+            return;
+        }
+
+        const productsSearched = products.filter(
+            (product) => {
+                const category = product.category.toLowerCase();
+                const isMatch = category.indexOf(selectedString.trim().toLowerCase());
+
+                return isMatch !== -1;
+            }
+        )
+
+        
+        console.log(productsSearched);
+        setSearchedProducts(productsSearched);
+    }
+
+    // const handleCategoryUpdate = (cat) => {
+    //     setSelectedCategory(.target.value)
+    // }
 
     const getProducts = async() => {
         try{
@@ -71,6 +110,10 @@ export const HomePage = () => {
             <div className="topBanner"></div>
 
             <Search handleSearchUpdate={handleSearchUpdate}></Search>
+
+            <p className="category" id="jewelery" onClick={() => handleCategoryUpdate('jewelery')}>Jewelery</p>
+            <p className="category" id="clothing" onClick={() => handleCategoryUpdate('clothing')}>Clothing</p>
+            <p className="category" id="electronics" onClick={() => handleCategoryUpdate('electronics')}>Electronics</p>
 
             <div className="products-container">
                 {
